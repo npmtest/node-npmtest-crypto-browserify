@@ -1,1 +1,40 @@
-{     "devDependencies": {         "crypto-browserify": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-crypto-browserify",     "homepage": "https://github.com/npmtest/node-npmtest-crypto-browserify",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-crypto-browserify.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [crypto-browserify (v3.11.0)](https://github.com/crypto-browserify/crypto-browserify)  [![npm package](https://img.shields.io/npm/v/npmtest-crypto-browserify.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-crypto-browserify) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-crypto-browserify.svg)](https://travis-ci.org/npmtest/node-npmtest-crypto-browserify)",
+    "devDependencies": {
+        "crypto-browserify": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-crypto-browserify",
+    "keywords": [
+        "coverage",
+        "test",
+        "crypto-browserify"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_crypto_browserify.js",
+    "name": "npmtest-crypto-browserify",
+    "nameAlias": "npmtest_crypto_browserify",
+    "nameOriginal": "npmtest-crypto-browserify",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-crypto-browserify.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
