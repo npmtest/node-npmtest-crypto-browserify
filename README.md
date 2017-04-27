@@ -1,6 +1,6 @@
 # npmtest-crypto-browserify
 
-#### test coverage for  [crypto-browserify (v3.11.0)](https://github.com/crypto-browserify/crypto-browserify)  [![npm package](https://img.shields.io/npm/v/npmtest-crypto-browserify.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-crypto-browserify) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-crypto-browserify.svg)](https://travis-ci.org/npmtest/node-npmtest-crypto-browserify)
+#### basic test coverage for  [crypto-browserify (v3.11.0)](https://github.com/crypto-browserify/crypto-browserify)  [![npm package](https://img.shields.io/npm/v/npmtest-crypto-browserify.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-crypto-browserify) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-crypto-browserify.svg)](https://travis-ci.org/npmtest/node-npmtest-crypto-browserify)
 
 #### implementation of crypto for the browser
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-crypto-browserify/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-crypto-browserify/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-crypto-browserify/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-crypto-browserify/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-crypto-browserify/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-crypto-browserify/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-crypto-browserify/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-crypto-browserify/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-crypto-browserify/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-crypto-browserify/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-crypto-browserify/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-crypto-browserify/build/coverage.html/index.html)
 
@@ -105,7 +105,8 @@
         "test": "npm run standard && npm run unit",
         "unit": "node test/"
     },
-    "version": "3.11.0"
+    "version": "3.11.0",
+    "bin": {}
 }
 ```
 
